@@ -1,79 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Login V12</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>HOT TEA- One page HTML Responsive</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#menu">Menu</a></li>
+                                    
+                                    <li><a href="/restaurant/Login_v12/login.html">Login</a></li>
+                                    <li><a href="#reservation">Reservation</a></li>
+                                    <li><a href="#footer">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
 	
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/pexels-photo.jpg');background-color: black; opacity: 1.0;">
-			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form validate-form" method="post" name="form1" action="userlogin.php">
-					<div class="login100-form-avatar">
-						<img src="images/cargo logo.png" alt="AVATAR">
-					</div>
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                                <h1>Suda Suda snaackkss  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
+                                <h2>FOR FOODIES OUT THERE!</h2>
+                                <p>Fresh baked and fried snacks with hot drinks for you, anytime, anywhere!</p>
+                            <div class="book-btn">
+                                <a href="#reservation" class="table-btn hvr-underline-from-center">RESERVE MY FOOD</a>
+                            </div>
+                            <a href="#about">
+                                    <div class="mouse"></div>
+                                </a>
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
 
-					<span class="login100-form-title p-t-20 p-b-45">
-						Cargo X
-					</span>
+    <div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title"> About Us </h2>
+                        <h3>IT STARTED, QUITE SIMPLY, LIKE THIS...</h3>
+                        <h2> Hot, fresh baked and fried snacks with drinks? Ping to get yourself the food wing.</h2>
+                        </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="images/main1.jpg" alt="About Main Image">
+                            <img class="about-inset" src="images/main2.jpg" alt="About Inset Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Menu 	
+					</h2>
+                        <p class="title-caption text-center">ENGAL UNAVAGAM UNGAL NAAKKAI NAATIYAM AADA SEIYUMAE </p>
+                    </div>
+                    <div class="tab-menu">
+                        <div class="slider slider-nav">
+                            <div class="tab-title-menu">
+                                <h2>TEA</h2>
+                                <p> <i class="flaticon-canape"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>COFFEE</h2>
+                                <p> <i class="flaticon-dinner"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>SNACKS</h2>
+                                <p> <i class="flaticon-desert"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>DESSERTS</h2>
+                                <p> <i class="flaticon-coffee"></i> </p>
+                            </div>
+                        </div>
+                        <div class="slider slider-single">
+                            <div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <div class="offer-item">
+                                            <img src="images/plaintea-thumbnail.jpg" alt="" class="img-responsive">
+                                            <div>
+                                                <h3>MILK TEA</h3>
+                                            </div>
+                                            <span class="offer-price">15/-</span>
+                                        </div>
+                                    </div>
+                                    <!-- end col-->
+                                    <div class="col-lg-6 col-md-6 col-sm-35 col-xs-12 ">
+                                            <div class="offer-item">
+                                                <img src="images/mudpottea.jpg" alt="" class="img-responsive">
+                                                <div>
+                                                    <h3>MUD-POT TEA</h3>
+                                                </div>
+                                                <span class="offer-price">35/-</span>
+                                            </div>
+                                        </div>
+                                        <!-- end col -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                                <div class="offer-item">
+                                                    <img src="images/icedtea.jpg" alt="" class="img-responsive">
+                                                    <div>
+                                                        <h3>ICED-TEA</h3>
+                                                    </div>
+                                                    <span class="offer-price">35/-</span>
+                                                </div>
+                                            </div>
+                                            <!-- end col -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                                <div class="offer-item">
+                                                    <img src="images/greentea.jpg" alt="" class="img-responsive">
+                                                    <div>
+                                                        <h3>GREEN TEA</h3>
+                                                    </div>
+                                                    <span class="offer-price">20/-</span>
+                                                </div>
+                                            </div>
+                                            <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/lemontea.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>LEMON TEA</h3>
+                                        </div>
+                                        <span class="offer-price">20/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <div class="offer-item">
+                                            <img src="images/blacktea.jpg" alt="" class="img-responsive">
+                                            <div>
+                                                <h3>BLACK TEA</h3>
+                                            </div>
+                                            <span class="offer-price">20/-</span>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/gingertea.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>GINGER TEA</h3>
+                                        </div>
+                                        <span class="offer-price">25/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/cappuccino.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>CAPPUCCINO</h3>
+                                        </div>
+                                        <span class="offer-price">20/-</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/expresso.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>EXPRESSO</h3>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">30/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/blackcoffee.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>BLACK COFFEE</h3>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">25/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/samosa-thumbnail.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>SAMOSA</h3>
+                                            <p>
+                                               5 per plate. 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">30/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/biscuit.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>BISCUITS</h3>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">5/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/bun.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>PLAIN BUN</h3>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">10/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/blackforest.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>BLACK FOREST</h3>
+                                        </div>
+                                        <span class="offer-price">25/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/icecream.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>VANILLA ICE-CREAM</h3>
 
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-						<input class="input100" type="text" name="user" placeholder="Username">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user"></i>
-						</span>
-					</div>
+                                        </div>
+                                        <span class="offer-price">30/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/brownies.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>BROWNIE</h3>
+                                        </div>
+                                        <span class="offer-price">30/-</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab-menu -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end menu -->
 
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock"></i>
-						</span>
-					</div>
+    
+    
+    <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center">
+						Reservations			
+					</h2>
+                        </div>
+                        <h4 class="form-title">BOOKING FORM</h4>
+                        <p>PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS!</p>
 
-					<div class="container-login100-form-btn p-t-10">
-						<input type="submit" name="submit" class="login100-form-btn" value="login">
-							
+                        <form id="contact-form" method="post" class="reservations-box" name="contactform" action="mail.php">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="form_name" id="form_name" placeholder="Name" required="required" data-error="Firstname is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="email" name="email" id="email" placeholder="E-Mail ID" required="required" data-error="E-mail id is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="phone" id="phone" placeholder="contact no.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="no_of_persons" id="no_of_persons" class="selectpicker">
+                                        <option selected disabled>No. Of persons</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="date-picker" id="date-picker" placeholder="Date" required="required" data-error="Date is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="time-picker" id="time-picker" placeholder="Time" required="required" data-error="Time is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="preferred_food" id="preferred_food" class="selectpicker">
+                                        <option selected disabled>preferred food</option>
+                                        <option>Milk Tea</option>
+                                        <option>Mudpot Tea</option>
+                                        <option>GreenTea</option>
 
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	
+                                        <option>ginger Tea</option>
+                                        <option>lemon Tea</option>
+                                        <option>iced Tea</option>
+                                        <option>cappuccino Coffee</option>
+                                        <option>expresso Coffee</option><option>black Coffee</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
 
-	
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="reserve-book-btn text-center">
+                                    <button class="hvr-underline-from-center" type="submit" value="SEND" id="submit">RESERVE MY FOOD </button>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </form>
+                        <!-- end form -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end reservations-box -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end reservations-main -->
 
+    <div id="footer" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center"> Newsletter </h2>
+                            <p> </p>
+                        </div>
+                        <form>
+                            <input type="email" placeholder="Enter your e-mail id">
+                            <a href="#" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="images/logo.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Hot, fresh baked and fried snacks with drinks? Ping to get yourself the food wing.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="footer-box-b">
+                                    <h3>Diwali Special Menu</h3>
+                                    <ul>
+                                        <li><a href="#">BOOM BOOM BURGER</a></li>
+                                        <li><a href="#">CAFE LATTE</a></li>
+                                        <li><a href="#">CHILLY CRISPY SANDWICH</a></li>
+                                        <li><a href="#">CHOCO TRUFFLE </a></li>
+                                    </ul>
+                                </div>
+                                <!-- end footer-box-b -->
+                            </div>
+                            <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>NO.7,Kellys Road,Kilpauk,Chennai-10.</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 75501 63382 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@hottea.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
