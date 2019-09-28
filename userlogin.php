@@ -10,7 +10,7 @@ echo $user;
 echo $password1;
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
-
+$param_password=password_hash($password1, PASSWORD_DEFAULT);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
